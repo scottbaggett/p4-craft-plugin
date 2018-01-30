@@ -1,0 +1,25 @@
+{
+  "name": "part4/part4craft",
+  "description": "Part4 Content Plugin",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "minimum-stability": "dev",
+  "require": {
+    "craftcms/cms": "^3.0.0-RC1"
+  },
+  "autoload": {
+    "psr-4": {
+      "part4\\part4craft\\": "src/"
+    }
+  },
+  "support": {
+    "email": "hello@scottbaggett.com"
+  },
+  "extra": {
+    "handle": "part4craft",
+    "name": "Part IV Craft",
+    "developer": "Part IV",
+    "developerUrl": "https://part4.com",
+    "class": "part4\\part4craft\\Part4"
+  }
+}
