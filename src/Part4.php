@@ -37,10 +37,25 @@ class Part4 extends Plugin
 
     public static $fbID = '374743726270540';
 
+    public $hasCpSettings = true;
+
     public function init()
     {
         parent::init();
         self::$plugin = $this;
 
     }
+
+    protected function createSettingsModel()
+    {
+        return new \part4\part4craft\models\Settings();
+    }
+
+     protected function settingsHtml()
+    {
+        return \Craft::$app->getView()->renderTemplate('part4craft/settings', [
+            'settings' => $this->getSettings()
+        ]);
+    }
+
 }

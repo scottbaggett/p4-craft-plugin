@@ -1,0 +1,23 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    first: true,
+    label: "Facebook Page ID",
+    name: 'fb_page_id',
+    value: settings.fb_page_id
+}) }}
+
+{{ forms.textField({
+    first: true,
+    label: "Facebook App ID",
+    name: 'fb_app_id',
+    value: settings.fb_app_id
+}) }}
+
+{{ forms.textField({
+    first: true,
+    label: "Facebook App Secret",
+    name: 'fb_app_secret',
+    value: settings.fb_app_secret
+}) }}
+
